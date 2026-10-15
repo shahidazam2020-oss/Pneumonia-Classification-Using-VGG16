@@ -31,7 +31,7 @@ This input size is compatible with the VGG16 model.
 
 ## 🛠️ Technologies Used
 
-The project was developed using:
+**The project was developed using:**
 
 • Python
 
