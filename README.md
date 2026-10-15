@@ -53,7 +53,7 @@ This input size is compatible with the VGG16 model.
 
 ## 🔄 Project Workflow
 
-The complete workflow of the project is:
+**The complete workflow of the project is:**
 
 Dataset Download → Data Preprocessing → Data Augmentation → Image Visualization → VGG16 Transfer Learning → Model Training → Model Evaluation → Predictions → Confusion Matrix → Classification Report
 
