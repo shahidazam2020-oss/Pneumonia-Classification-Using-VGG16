@@ -55,7 +55,7 @@ This input size is compatible with the VGG16 model.
 
 **The complete workflow of the project is:**
 
-Dataset Download → Data Preprocessing → Data Augmentation → Image Visualization → VGG16 Transfer Learning → Model Training → Model Evaluation → Predictions → Confusion Matrix → Classification Report
+**Dataset Download → Data Preprocessing → Data Augmentation → Image Visualization → VGG16 Transfer Learning → Model Training → Model Evaluation → Predictions → Confusion Matrix → Classification Report****
 
 ## 📊 Data Preprocessing
 
