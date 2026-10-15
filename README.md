@@ -2,7 +2,7 @@
 
 ## 📌 Project Overview
 
-This project implements a deep learning based system for classifying chest X ray images into two categories:
+**This project implements a deep learning based system for classifying chest X ray images into two categories:**
 
 1. Normal
 2. Pneumonia
