@@ -205,7 +205,7 @@ plot_learning_curves(history)
 
 ## 🧪 Model Evaluation
 
-After training, the model is evaluated using the independent test dataset.
+**After training, the model is evaluated using the independent test dataset.**
 
 The evaluation calculates:
 
