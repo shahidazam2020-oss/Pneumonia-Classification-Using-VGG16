@@ -75,7 +75,7 @@ rescale = 1./255
 
 • Horizontal flipping
 
-The validation and testing datasets are only rescaled.
+**The validation and testing datasets are only rescaled.**
 
 ## 🖼️ Dataset Visualization
 
