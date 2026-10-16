@@ -141,7 +141,7 @@ Prediction
 
 ## ⚙️ Model Configuration
 
-The model uses the following settings:
+**The model uses the following settings:**
 
 | Parameter          | Value                |
 | ------------------ | -------------------- |
