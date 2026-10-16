@@ -79,7 +79,7 @@ The validation and testing datasets are only rescaled.
 
 ## 🖼️ Dataset Visualization
 
-Before training, sample chest X ray images are displayed from the training dataset.
+**Before training, sample chest X ray images are displayed from the training dataset.**
 
 Each image is labeled as either:
 
