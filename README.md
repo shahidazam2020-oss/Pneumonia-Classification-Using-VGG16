@@ -226,7 +226,7 @@ print(f'Test Accuracy: {test_acc:.2f}')
 Test Accuracy: [Your Model Result]
 ```
 
-Replace `[Your Model Result]` with the exact accuracy produced when you run the notebook.
+**Replace `[Your Model Result]` with the exact accuracy produced when you run the notebook.**
 
 ## 🔍 Predictions
 
