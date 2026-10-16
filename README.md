@@ -232,7 +232,7 @@ Test Accuracy: [Your Model Result]
 
 **The trained model predicts the probability that each chest X ray image belongs to the pneumonia class.**
 
-A threshold of 0.5 is used:
+*A threshold of 0.5 is used:*
 
 ```python
 predicted_labels = (predictions > 0.5).astype(int)
