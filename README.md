@@ -247,7 +247,7 @@ predicted_labels = (predictions > 0.5).astype(int)
 
 ## 🔥 Confusion Matrix
 
-A confusion matrix is generated to analyze the model's predictions.
+**A confusion matrix is generated to analyze the model's predictions.**
 
 ```text
                     Predicted
