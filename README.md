@@ -1,4 +1,4 @@
-# 🫁 Pneumonia Classification Using VGG16
+<img width="501" height="186" alt="image" src="https://github.com/user-attachments/assets/a7afc9b7-da80-41ca-b0a6-28e53ccfd061" /># 🫁 Pneumonia Classification Using VGG16
 
 ## 📌 Project Overview
 
@@ -434,6 +434,7 @@ I enjoy building complete software systems—from networking and operating syste
 - <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="18" height="18" valign="middle" /> WhatsApp: <a href="https://wa.me/+923412772594" target="_blank">Chat on WhatsApp</a>
 
 ---
+
 
 ## 🎯 Conclusion
 
