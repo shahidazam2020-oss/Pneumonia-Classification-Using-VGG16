@@ -7,7 +7,7 @@
 1. Normal
 2. Pneumonia
 
-The project uses transfer learning with the VGG16 convolutional neural network. A pretrained VGG16 model is used as the base model, while additional custom layers are added for binary classification.
+*The project uses transfer learning with the VGG16 convolutional neural network. A pretrained VGG16 model is used as the base model, while additional custom layers are added for binary classification.*
 
 **The main goal is to automatically identify whether a chest X ray image belongs to a healthy patient or a patient with pneumonia.**
 
