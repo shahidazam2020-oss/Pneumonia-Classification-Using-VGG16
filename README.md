@@ -23,7 +23,7 @@
 
 **The dataset is divided into training, validation, and testing directories.**
 
-The images are resized to:
+*The images are resized to:*
 
 `224 × 224 × 3`
 
