@@ -21,7 +21,7 @@ The dataset contains chest X ray images organized into the following classes:
 
 • Pneumonia
 
-The dataset is divided into training, validation, and testing directories.
+**The dataset is divided into training, validation, and testing directories.**
 
 The images are resized to:
 
