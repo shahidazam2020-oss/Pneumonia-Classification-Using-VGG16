@@ -27,7 +27,7 @@ The images are resized to:
 
 `224 × 224 × 3`
 
-This input size is compatible with the VGG16 model.
+*This input size is compatible with the VGG16 model.*
 
 ## 🛠️ Technologies Used
 
