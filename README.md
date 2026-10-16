@@ -67,7 +67,7 @@ rescale = 1./255
 
 **Data augmentation is applied to the training dataset to improve the model's ability to generalize.**
 
-The following augmentation techniques are used:
+**The following augmentation techniques are used:**
 
 • Rotation
 
