@@ -99,7 +99,7 @@ Each image is labeled as either:
 └────────────┴────────────┴────────────┘
 ```
 
-This visualization helps verify that the dataset is loaded correctly before model training.
+**This visualization helps verify that the dataset is loaded correctly before model training.**
 
 ## 🧠 Model Architecture
 
