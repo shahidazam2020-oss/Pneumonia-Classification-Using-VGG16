@@ -414,6 +414,8 @@ pip install tensorflow numpy matplotlib seaborn scikit-learn kaggle
 
 8. View the learning curves, confusion matrix, and classification report.
 
+---
+
 ## 🎯 Conclusion
 
 This project demonstrates the use of transfer learning for medical image classification. The pretrained VGG16 model extracts useful visual features from chest X ray images, while custom layers perform the final Normal versus Pneumonia classification.
