@@ -238,7 +238,7 @@ Test Accuracy: [Your Model Result]
 predicted_labels = (predictions > 0.5).astype(int)
 ```
 
-Prediction values are interpreted as:
+*Prediction values are interpreted as:*
 
 ```text
 0 → Normal
