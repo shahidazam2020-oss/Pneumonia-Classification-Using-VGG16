@@ -105,7 +105,7 @@ rescale = 1./255
 
 **The VGG16 model is used as the pretrained feature extractor.**
 
-The ImageNet pretrained weights are loaded with:
+*The ImageNet pretrained weights are loaded with:*
 
 ```python
 base_model = VGG16(
