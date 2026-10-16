@@ -213,7 +213,7 @@ The evaluation calculates:
 
 • Test Accuracy
 
-The notebook prints the result using:
+**The notebook prints the result using:**
 
 ```python
 test_loss, test_acc = model.evaluate(test_generator)
