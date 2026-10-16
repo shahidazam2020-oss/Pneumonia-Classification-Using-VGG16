@@ -184,7 +184,7 @@ Loss
 
 ### 2. Training and Validation Accuracy
 
-The accuracy graph compares the performance of the model on training and validation data.
+**The accuracy graph compares the performance of the model on training and validation data.**
 
 ```text
 Accuracy
