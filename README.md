@@ -230,7 +230,7 @@ Test Accuracy: [Your Model Result]
 
 ## 🔍 Predictions
 
-The trained model predicts the probability that each chest X ray image belongs to the pneumonia class.
+**The trained model predicts the probability that each chest X ray image belongs to the pneumonia class.**
 
 A threshold of 0.5 is used:
 
