@@ -162,7 +162,7 @@ Prediction
 
 **The model is trained for 30 epochs using the training dataset and validated on the validation dataset.**
 
-Two important graphs are generated during evaluation.
+*Two important graphs are generated during evaluation.*
 
 ### 1. Training and Validation Loss
 
