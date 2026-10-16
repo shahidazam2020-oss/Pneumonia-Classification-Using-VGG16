@@ -300,7 +300,7 @@ Then display it in the README:
 
 • Support
 
-The report evaluates the performance for both classes:
+**The report evaluates the performance for both classes:**
 
 ```text
 Normal
