@@ -207,7 +207,7 @@ plot_learning_curves(history)
 
 **After training, the model is evaluated using the independent test dataset.**
 
-The evaluation calculates:
+**The evaluation calculates:**
 
 • Test Loss
 
