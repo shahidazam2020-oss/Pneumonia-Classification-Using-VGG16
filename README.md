@@ -13,7 +13,7 @@
 
 ## 📂 Dataset
 
-The project uses the Chest X Ray Pneumonia dataset.
+*The project uses the Chest X Ray Pneumonia dataset.*
 
 The dataset contains chest X ray images organized into the following classes:
 
