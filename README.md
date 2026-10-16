@@ -353,7 +353,7 @@ results/
 └── confusion_matrix.png
 ```
 
-These images can be displayed in the README.
+**These images can be displayed in the README.**
 
 ### Sample Chest X Ray Images
 
