@@ -197,7 +197,7 @@ Accuracy
  └──────────────────────── Epochs
 ```
 
-The actual graphs are generated automatically by the following code:
+**The actual graphs are generated automatically by the following code:**
 
 ```python
 plot_learning_curves(history)
