@@ -160,7 +160,7 @@ The model uses the following settings:
 
 ## 📈 Training and Validation Results
 
-The model is trained for 30 epochs using the training dataset and validated on the validation dataset.
+**The model is trained for 30 epochs using the training dataset and validated on the validation dataset.**
 
 Two important graphs are generated during evaluation.
 
