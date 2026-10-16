@@ -290,7 +290,7 @@ Then display it in the README:
 
 ## 📋 Classification Report
 
-The model also generates a classification report containing:
+**The model also generates a classification report containing:**
 
 • Precision
 
