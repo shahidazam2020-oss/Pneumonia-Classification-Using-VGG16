@@ -180,7 +180,7 @@ Loss
  └──────────────────────── Epochs
 ```
 
-A decreasing loss indicates that the model is learning useful patterns from the chest X ray images.
+**A decreasing loss indicates that the model is learning useful patterns from the chest X ray images.**
 
 ### 2. Training and Validation Accuracy
 
