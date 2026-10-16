@@ -423,6 +423,16 @@ pip install tensorflow numpy matplotlib seaborn scikit-learn kaggle
 **MS Computer Science Student**
 **Specialization in Artificial Intelligence**
 
+Institute of Management Sciences, Peshawar, Pakistan
+
+I enjoy building complete software systems—from networking and operating system concepts to backend architecture, machine learning, and distributed systems.
+
+- 🎓 **Degree / Field:** MS in Computer Science (Specialization in Artificial Intelligence)
+- 🏆 **Achievements:** Designed and executed 30+ machine learning and data visualization projects delivering actionable insights
+- 🎯 **Focus Areas:** Data Visualization, AI/ML, Big Data Mining
+- 📬 **Contact:** shahidazam2020@gmail.com
+- <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="18" height="18" valign="middle" /> WhatsApp: <a href="https://wa.me/+923412772594" target="_blank">Chat on WhatsApp</a>
+
 ## 🎯 Conclusion
 
 **This project demonstrates the use of transfer learning for medical image classification. The pretrained VGG16 model extracts useful visual features from chest X ray images, while custom layers perform the final Normal versus Pneumonia classification.**
