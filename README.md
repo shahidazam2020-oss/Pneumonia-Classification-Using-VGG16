@@ -166,7 +166,7 @@ Prediction
 
 ### 1. Training and Validation Loss
 
-The loss graph shows how the model error changes during training.
+**The loss graph shows how the model error changes during training.**
 
 ```text
 Loss
