@@ -59,7 +59,7 @@ This input size is compatible with the VGG16 model.
 
 ## 📊 Data Preprocessing
 
-All images are normalized by dividing pixel values by 255.
+**All images are normalized by dividing pixel values by 255.**
 
 ```python
 rescale = 1./255
