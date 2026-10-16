@@ -414,7 +414,10 @@ pip install tensorflow numpy matplotlib seaborn scikit-learn kaggle
 
 8. View the learning curves, confusion matrix, and classification report.
 
+
 ---
+
+# 👨‍💻 Author
 
 ## 🎯 Conclusion
 
