@@ -276,7 +276,7 @@ plot_confusion_matrix(cm, ['Normal', 'Pneumonia'])
 
 ### Confusion Matrix Visualization
 
-Add your generated confusion matrix image to the repository:
+**Add your generated confusion matrix image to the repository:**
 
 ```text
 results/confusion_matrix.png
