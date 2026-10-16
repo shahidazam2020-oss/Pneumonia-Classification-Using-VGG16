@@ -81,7 +81,7 @@ rescale = 1./255
 
 **Before training, sample chest X ray images are displayed from the training dataset.**
 
-Each image is labeled as either:
+*Each image is labeled as either:*
 
 • Normal
 
