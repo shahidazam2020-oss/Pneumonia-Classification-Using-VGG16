@@ -342,7 +342,7 @@ classification_report(
 
 ## 📈 Project Visualizations
 
-The repository should contain the following result images:
+**The repository should contain the following result images:**
 
 ```text
 results/
