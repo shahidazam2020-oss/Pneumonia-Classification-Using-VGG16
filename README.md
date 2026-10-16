@@ -115,7 +115,7 @@ base_model = VGG16(
 )
 ```
 
-The pretrained VGG16 layers are frozen during training:
+**The pretrained VGG16 layers are frozen during training:**
 
 ```python
 base_model.trainable = False
