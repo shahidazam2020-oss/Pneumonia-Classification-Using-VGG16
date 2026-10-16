@@ -307,7 +307,7 @@ Normal
 Pneumonia
 ```
 
-The classification report is generated using:
+**The classification report is generated using:**
 
 ```python
 classification_report(
