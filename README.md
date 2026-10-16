@@ -103,7 +103,7 @@ rescale = 1./255
 
 ## 🧠 Model Architecture
 
-The VGG16 model is used as the pretrained feature extractor.
+**The VGG16 model is used as the pretrained feature extractor.**
 
 The ImageNet pretrained weights are loaded with:
 
