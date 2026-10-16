@@ -433,6 +433,8 @@ I enjoy building complete software systems—from networking and operating syste
 - 📬 **Contact:** shahidazam2020@gmail.com
 - <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="18" height="18" valign="middle" /> WhatsApp: <a href="https://wa.me/+923412772594" target="_blank">Chat on WhatsApp</a>
 
+---
+
 ## 🎯 Conclusion
 
 **This project demonstrates the use of transfer learning for medical image classification. The pretrained VGG16 model extracts useful visual features from chest X ray images, while custom layers perform the final Normal versus Pneumonia classification.**
