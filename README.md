@@ -328,7 +328,7 @@ classification_report(
 
 ## 📊 Results
 
-The final performance of the model should be presented here using your actual output.
+**The final performance of the model should be presented here using your actual output.**
 
 | Metric              | Result          |
 | ------------------- | --------------- |
