@@ -444,6 +444,7 @@ I enjoy building complete software systems—from networking and operating syste
 <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
 </a>
     <a href="https://www.linkedin.com/in/shahid-azam-mughal-787b58235">
+        <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
 ## 🎯 Conclusion
 
 **This project demonstrates the use of transfer learning for medical image classification. The pretrained VGG16 model extracts useful visual features from chest X ray images, while custom layers perform the final Normal versus Pneumonia classification.**
