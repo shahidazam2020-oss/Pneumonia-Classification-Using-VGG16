@@ -417,7 +417,7 @@ pip install tensorflow numpy matplotlib seaborn scikit-learn kaggle
 
 ---
 
-# 👨‍💻 Author
+# 👨‍💻 About Me
 ## Shahid Azam
 
 **MS Computer Science Student**
