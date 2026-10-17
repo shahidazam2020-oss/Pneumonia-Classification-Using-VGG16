@@ -437,6 +437,7 @@ I enjoy building complete software systems—from networking and operating syste
 📊 Data Analysis • 🔬 Research • 🤖 Machine Learning • 🔐 Cybersecurity • 🌐 IoT
 
 
+---
 ## 🎯 Conclusion
 
 **This project demonstrates the use of transfer learning for medical image classification. The pretrained VGG16 model extracts useful visual features from chest X ray images, while custom layers perform the final Normal versus Pneumonia classification.**
