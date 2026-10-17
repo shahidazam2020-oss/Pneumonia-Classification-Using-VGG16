@@ -442,7 +442,7 @@ I enjoy building complete software systems—from networking and operating syste
 <p align="center">
 <a href="https://github.com/shahidazam2020-oss">
 <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
-
+</a>
 ## 🎯 Conclusion
 
 **This project demonstrates the use of transfer learning for medical image classification. The pretrained VGG16 model extracts useful visual features from chest X ray images, while custom layers perform the final Normal versus Pneumonia classification.**
