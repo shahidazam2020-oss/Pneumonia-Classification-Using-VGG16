@@ -454,3 +454,6 @@ I enjoy building complete software systems—from networking and operating syste
 **This project demonstrates the use of transfer learning for medical image classification. The pretrained VGG16 model extracts useful visual features from chest X ray images, while custom layers perform the final Normal versus Pneumonia classification.**
 
 **The project includes data preprocessing, augmentation, image visualization, model training, performance evaluation, learning curves, confusion matrix analysis, and classification metrics. These results provide a complete overview of the model's performance on pneumonia classification.**
+
+
+---
