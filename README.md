@@ -447,7 +447,8 @@ I enjoy building complete software systems—from networking and operating syste
         <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
         </a>
 
-    ---
+---
+    
 ## 🎯 Conclusion
 
 **This project demonstrates the use of transfer learning for medical image classification. The pretrained VGG16 model extracts useful visual features from chest X ray images, while custom layers perform the final Normal versus Pneumonia classification.**
