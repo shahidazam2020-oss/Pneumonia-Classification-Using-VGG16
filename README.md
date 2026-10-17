@@ -1,4 +1,4 @@
-<img width="501" height="186" alt="image" src="https://github.com/user-attachments/assets/a7afc9b7-da80-41ca-b0a6-28e53ccfd061" /># 🫁 Pneumonia Classification Using VGG16
+
 
 ## 📌 Project Overview
 
