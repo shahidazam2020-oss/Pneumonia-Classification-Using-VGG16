@@ -3,7 +3,9 @@
  <a href="https://github.com/shahidazam2020-oss/Pneumonia-Classification-Using-VGG16/stargazers">
     <img src="https://img.shields.io/github/stars/shahidazam2020-oss/Pneumonia-Classification-Using-VGG16?style=social&cacheSeconds=60" alt="GitHub Stars">
   </a>
-
+ <a href="https://github.com/shahidazam2020-oss/Pneumonia-Classification-Using-VGG16/forks">
+    <img src="https://img.shields.io/github/forks/shahidazam2020-oss/Pneumonia-Classification-Using-VGG16?style=social&cacheSeconds=60" alt="GitHub Forks">
+  </a>
 
 
   </p>
