@@ -6,7 +6,9 @@
  <a href="https://github.com/shahidazam2020-oss/Pneumonia-Classification-Using-VGG16/forks">
     <img src="https://img.shields.io/github/forks/shahidazam2020-oss/Pneumonia-Classification-Using-VGG16?style=social&cacheSeconds=60" alt="GitHub Forks">
   </a>
-
+<a href="https://github.com/shahidazam2020-oss/Pneumonia-Classification-Using-VGG16/commits">
+    <img src="https://img.shields.io/github/last-commit/shahidazam2020-oss/Pneumonia-Classification-Using-VGG16?display_timestamp=committer&style=flat-square" alt="Last Commit">
+  </a>
 
   </p>
 
