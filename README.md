@@ -1,6 +1,14 @@
 <p align="center">
 
+ <a href="https://github.com/shahidazam2020-oss/Pneumonia-Classification-Using-VGG16/stargazers">
+    <img src="https://img.shields.io/github/stars/shahidazam2020-oss/Pneumonia-Classification-Using-VGG16?style=social&cacheSeconds=60" alt="GitHub Stars">
+  </a>
 
+
+
+  </p>
+
+  ---
 ## 📌 Project Overview
 
 **This project implements a deep learning based system for classifying chest X ray images into two categories:**
