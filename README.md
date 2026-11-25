@@ -469,7 +469,5 @@ I enjoy building complete software systems—from networking and operating syste
 
 
 ---
+# ⭐ If You Find This Project Useful
 
-# ⭐ Support
-Your feedback, suggestions, and contributions are welcome.
-If you find this repository useful for learning Machine Learning, consider giving it a ⭐.
