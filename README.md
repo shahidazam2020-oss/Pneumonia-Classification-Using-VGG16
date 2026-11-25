@@ -471,3 +471,5 @@ I enjoy building complete software systems—from networking and operating syste
 ---
 # ⭐ If You Find This Project Useful
 
+If this project helps you understand machine learning for healthcare prediction, consider:
+
