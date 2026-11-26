@@ -12,112 +12,259 @@
 
   </p>
 
-## 📌 Project Overview
+---
+<div align="center">
 
-**This project implements a deep learning based system for classifying chest X ray images into two categories:**
+# 🫁 Pneumonia Classification Using VGG16
 
-1. Normal
-2. Pneumonia
+### Deep Learning • Transfer Learning • Medical Image Classification
 
-*The project uses transfer learning with the VGG16 convolutional neural network. A pretrained VGG16 model is used as the base model, while additional custom layers are added for binary classification.*
+<p>
+  <img src="https://img.shields.io/badge/Deep%20Learning-VGG16-blue?style=for-the-badge&logo=tensorflow&logoColor=white" />
+  <img src="https://img.shields.io/badge/Computer%20Vision-Medical%20AI-purple?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Framework-TensorFlow-orange?style=for-the-badge&logo=tensorflow&logoColor=white" />
+  <img src="https://img.shields.io/badge/Language-Python-yellow?style=for-the-badge&logo=python&logoColor=white" />
+</p>
 
-**The main goal is to automatically identify whether a chest X ray image belongs to a healthy patient or a patient with pneumonia.**
+<br>
 
-## 📂 Dataset
+<a href="https://github.com/shahidazam2020-oss/Pneumonia-Classification-Using-VGG16">
+  <img src="https://img.shields.io/badge/📂_EXPLORE-GitHub_Repository-181717?style=for-the-badge&logo=github" />
+</a>
 
-*The project uses the Chest X Ray Pneumonia dataset.*
+<a href="https://github.com/shahidazam2020-oss/Pneumonia-Classification-Using-VGG16/issues">
+  <img src="https://img.shields.io/badge/🐛_REPORT-Open_an_Issue-red?style=for-the-badge&logo=github" />
+</a>
 
-*The dataset contains chest X ray images organized into the following classes:*
+<a href="https://github.com/shahidazam2020-oss/Pneumonia-Classification-Using-VGG16">
+  <img src="https://img.shields.io/badge/⭐_SUPPORT-Star_Repository-yellow?style=for-the-badge&logo=github" />
+</a>
 
-• Normal
+<br><br>
 
-• Pneumonia
+**An AI-powered image classification project leveraging VGG16 transfer learning to distinguish between Normal and Pneumonia chest X-ray images.**
 
-**The dataset is divided into training, validation, and testing directories.**
+<br>
 
-*The images are resized to:*
+[Overview](#-project-overview) •
+[Architecture](#-model-architecture) •
+[Dataset](#-dataset-overview) •
+[Methodology](#-methodology) •
+[Results](#-model-evaluation--results) •
+[Installation](#-installation--execution)
 
-`224 × 224 × 3`
+</div>
 
-*This input size is compatible with the VGG16 model.*
+---
 
-## 🛠️ Technologies Used
+# 📌 Project Overview
 
-**The project was developed using:**
+Pneumonia is a respiratory infection that affects the lungs and can cause serious health complications.
 
-• Python
+This project explores the application of **Deep Learning and Transfer Learning** for classifying chest X-ray images into two categories:
 
-• TensorFlow
+- 🟢 **Normal:** Chest X-ray images representing the Normal class.
+- 🔴 **Pneumonia:** Chest X-ray images representing the Pneumonia class.
 
-• Keras
+The project utilizes the VGG16 convolutional neural network pretrained on ImageNet as a feature extraction backbone.
 
-• VGG16
+A custom classification head is added to the pretrained architecture to perform binary image classification.
 
-• NumPy
+The implementation covers image preprocessing, data augmentation, model development, training, validation, performance evaluation, and visualization.
 
-• Matplotlib
+> **Primary Objective:** Investigate the effectiveness of VGG16 transfer learning for automated chest X-ray image classification.
 
-• Seaborn
+---
 
-• Scikit learn
+# 🎯 Project Objectives
 
-• Kaggle
+The main objectives of this project are:
 
-## 🔄 Project Workflow
+- 🫁 Develop a deep learning framework for pneumonia image classification.
+- 🧠 Implement transfer learning using the pretrained VGG16 architecture.
+- 🖼️ Prepare chest X-ray images for deep learning.
+- 🔄 Apply data augmentation to improve model generalization.
+- ⚙️ Develop a custom binary classification head.
+- 📈 Monitor training and validation performance.
+- 📊 Evaluate classification performance using multiple metrics.
+- 🔍 Analyze model predictions through a confusion matrix.
+- 📋 Generate a detailed classification report.
 
-**The complete workflow of the project is:**
+---
 
-**Dataset Download → Data Preprocessing → Data Augmentation → Image Visualization → VGG16 Transfer Learning → Model Training → Model Evaluation → Predictions → Confusion Matrix → Classification Report****
+# 📊 Project Dashboard
 
-## 📊 Data Preprocessing
+<div align="center">
 
-**All images are normalized by dividing pixel values by 255.**
+| Project Attribute | Details |
+|:---|:---|
+| 🫁 Project | Pneumonia Classification |
+| 🧠 Architecture | VGG16 |
+| 🔬 Learning Approach | Transfer Learning |
+| 🖼️ Input Type | Chest X-ray Images |
+| 🎯 Classification | Binary Classification |
+| 🟢 Class 1 | Normal |
+| 🔴 Class 2 | Pneumonia |
+| 📐 Input Dimensions | 224 × 224 × 3 |
+| ⚙️ Optimizer | Adam |
+| 📉 Loss Function | Binary Cross-Entropy |
+| 🔄 Training Epochs | 30 |
+| 📦 Batch Size | 32 |
+| 💻 Framework | TensorFlow / Keras |
+
+</div>
+
+---
+
+# 📂 Dataset Overview
+
+The project uses the **Chest X-Ray Images (Pneumonia)** dataset.
+
+The dataset contains chest X-ray images categorized into two classes:
+
+| Category | Description |
+|:---|:---|
+| 🟢 NORMAL | Images belonging to the Normal category |
+| 🔴 PNEUMONIA | Images belonging to the Pneumonia category |
+
+### 📁 Dataset Organization
+
+The dataset is organized into three main subsets:
+
+```text
+Chest_X-Ray_Dataset/
+│
+├── train/
+│   ├── NORMAL/
+│   └── PNEUMONIA/
+│
+├── val/
+│   ├── NORMAL/
+│   └── PNEUMONIA/
+│
+└── test/
+    ├── NORMAL/
+    └── PNEUMONIA/
+```
+
+### 📐 Image Specifications
+
+| Parameter | Configuration |
+|:---|:---|
+| Image Type | Chest X-ray |
+| Image Format | JPEG |
+| Input Width | 224 Pixels |
+| Input Height | 224 Pixels |
+| Color Channels | 3 |
+| Model Input | 224 × 224 × 3 |
+| Classification Classes | 2 |
+
+### 🔗 Dataset Source
+
+The dataset can be accessed through Kaggle:
+
+<a href="https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia">
+  <img src="https://img.shields.io/badge/Kaggle-Access_Dataset-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white" />
+</a>
+
+---
+
+# 🔬 Methodology
+
+The project follows a structured deep learning workflow.
+
+### 🧭 Complete Project Workflow
+
+```text
+             🖼️ CHEST X-RAY DATASET
+                       |
+                       ▼
+               📂 DATA LOADING
+                       |
+                       ▼
+              🧹 IMAGE PREPROCESSING
+                       |
+                       ▼
+              🔄 DATA AUGMENTATION
+                       |
+                       ▼
+             🧠 PRETRAINED VGG16
+                       |
+                       ▼
+              ⚙️ CUSTOM CLASSIFIER
+                       |
+                       ▼
+                🤖 MODEL TRAINING
+                       |
+                       ▼
+              📈 MODEL VALIDATION
+                       |
+                       ▼
+               🧪 MODEL TESTING
+                       |
+                       ▼
+             📊 PERFORMANCE ANALYSIS
+                       |
+                       ▼
+              🏆 FINAL PREDICTIONS
+```
+
+---
+
+# 🧹 Image Preprocessing
+
+Image preprocessing is an important stage in preparing medical images for deep learning.
+
+The project applies the following preprocessing operations:
+
+### 1. 📐 Image Resizing
+
+All images are resized to:
+
+```python
+224 × 224 × 3
+```
+
+This input dimension is compatible with the VGG16 architecture.
+
+### 2. 🔢 Image Normalization
+
+Pixel values are normalized using:
 
 ```python
 rescale = 1./255
 ```
 
-**Data augmentation is applied to the training dataset to improve the model's ability to generalize.**
+This converts pixel values from the original range of 0–255 to a normalized range of 0–1.
 
-**The following augmentation techniques are used:**
+### 3. 🔄 Data Augmentation
 
-• Rotation
+Data augmentation is applied to the training dataset to introduce image variations.
 
-• Zoom
+The implemented augmentation techniques include:
 
-• Horizontal flipping
+| Technique | Purpose |
+|:---|:---|
+| 🔄 Rotation | Introduces rotational variations |
+| 🔍 Zoom | Introduces scale variations |
+| ↔️ Horizontal Flip | Introduces horizontal image variations |
+| 📊 Rescaling | Normalizes pixel values |
 
-**The validation and testing datasets are only rescaled.**
+Validation and testing images are rescaled without applying training augmentation.
 
-## 🖼️ Dataset Visualization
+---
 
-**Before training, sample chest X ray images are displayed from the training dataset.**
+# 🧠 Model Architecture
 
-*Each image is labeled as either:*
+## VGG16 Transfer Learning
 
-• Normal
+VGG16 is a deep convolutional neural network developed for image recognition tasks.
 
-• Pneumonia
+In this project, the pretrained VGG16 architecture is used as a feature extractor.
 
-### Visualization
+The original classification head is removed, and custom dense layers are introduced for binary classification.
 
-```text
-┌────────────┬────────────┬────────────┐
-│   Normal   │ Pneumonia  │   Normal   │
-├────────────┼────────────┼────────────┤
-│ Pneumonia  │   Normal   │ Pneumonia  │
-├────────────┼────────────┼────────────┤
-│   Normal   │ Pneumonia  │ Pneumonia  │
-└────────────┴────────────┴────────────┘
-```
-
-**This visualization helps verify that the dataset is loaded correctly before model training.**
-
-## 🧠 Model Architecture
-
-**The VGG16 model is used as the pretrained feature extractor.**
-
-*The ImageNet pretrained weights are loaded with:*
+### ⚙️ Pretrained Model Configuration
 
 ```python
 base_model = VGG16(
@@ -125,373 +272,438 @@ base_model = VGG16(
     include_top=False,
     input_shape=(224, 224, 3)
 )
-```
 
-**The pretrained VGG16 layers are frozen during training:**
-
-```python
 base_model.trainable = False
 ```
 
-Custom layers are added on top of VGG16:
+The pretrained convolutional layers are frozen during training.
+
+### 🏗️ Custom Classification Architecture
 
 ```text
-Input Image
-     ↓
-VGG16 Pretrained Feature Extractor
-     ↓
-Flatten Layer
-     ↓
-Dense Layer, 512 neurons, ReLU
-     ↓
-Dropout, 0.5
-     ↓
-Dense Layer, 1 neuron, Sigmoid
-     ↓
-Prediction
+          INPUT IMAGE
+        224 × 224 × 3
+                |
+                ▼
+       PRETRAINED VGG16
+        FEATURE EXTRACTOR
+                |
+                ▼
+          FLATTEN LAYER
+                |
+                ▼
+       DENSE LAYER (512)
+           ReLU
+                |
+                ▼
+        DROPOUT LAYER
+             0.5
+                |
+                ▼
+       OUTPUT LAYER (1)
+            Sigmoid
+                |
+                ▼
+       BINARY CLASSIFICATION
+                |
+          ┌─────┴─────┐
+          ▼           ▼
+        NORMAL     PNEUMONIA
 ```
 
-## ⚙️ Model Configuration
+### 📋 Model Configuration
 
-**The model uses the following settings:**
+| Parameter | Value |
+|:---|:---|
+| Base Architecture | VGG16 |
+| Pretrained Weights | ImageNet |
+| Include Top | False |
+| Input Shape | 224 × 224 × 3 |
+| Feature Extractor | Frozen VGG16 |
+| Dense Neurons | 512 |
+| Hidden Activation | ReLU |
+| Dropout | 0.5 |
+| Output Neurons | 1 |
+| Output Activation | Sigmoid |
+| Optimizer | Adam |
+| Learning Rate | 0.0001 |
+| Loss Function | Binary Cross-Entropy |
+| Training Epochs | 30 |
+| Batch Size | 32 |
 
-| Parameter          | Value                |
-| ------------------ | -------------------- |
-| Base Model         | VGG16                |
-| Pretrained Weights | ImageNet             |
-| Input Size         | 224 × 224 × 3        |
-| Hidden Layer       | 512 neurons          |
-| Activation         | ReLU                 |
-| Dropout            | 0.5                  |
-| Output Activation  | Sigmoid              |
-| Optimizer          | Adam                 |
-| Learning Rate      | 0.0001               |
-| Loss Function      | Binary Cross Entropy |
-| Training Epochs    | 30                   |
-| Batch Size         | 32                   |
+---
 
-## 📈 Training and Validation Results
+# ⚙️ Model Training
 
-**The model is trained for 30 epochs using the training dataset and validated on the validation dataset.**
+The VGG16-based classification model is trained using the prepared chest X-ray training dataset.
 
-*Two important graphs are generated during evaluation.*
+Training and validation performance are monitored throughout the learning process.
 
-### 1. Training and Validation Loss
+### 🎯 Training Configuration
 
-**The loss graph shows how the model error changes during training.**
+- Pretrained ImageNet weights.
+- Frozen VGG16 feature extraction layers.
+- Custom dense classification head.
+- Adam optimizer.
+- Binary cross-entropy loss.
+- Batch size of 32.
+- Maximum of 30 training epochs.
 
-```text
-Loss
- │\
- │ \
- │  \        Training Loss
- │   \____
- │
- │  \____   Validation Loss
- │
- └──────────────────────── Epochs
-```
+### 📈 Training Monitoring
 
-**A decreasing loss indicates that the model is learning useful patterns from the chest X ray images.**
+Two important performance indicators are monitored:
 
-### 2. Training and Validation Accuracy
+**Training and Validation Loss**
 
-**The accuracy graph compares the performance of the model on training and validation data.**
+Evaluates how the model's prediction error changes throughout training.
 
-```text
-Accuracy
- │                ╭──── Training Accuracy
- │           ╭────╯
- │      ╭────╯
- │ ╭────╯
- │ ╰────── Validation Accuracy
- │
- └──────────────────────── Epochs
-```
+**Training and Validation Accuracy**
 
-**The actual graphs are generated automatically by the following code:**
+Compares classification accuracy across training and validation datasets.
 
-```python
-plot_learning_curves(history)
-```
+---
 
-## 🧪 Model Evaluation
+# 📊 Model Evaluation & Results
 
-**After training, the model is evaluated using the independent test dataset.**
+After training, the model is evaluated using the independent test dataset.
 
-**The evaluation calculates:**
+The evaluation process includes:
 
-• Test Loss
+| Metric | Purpose |
+|:---|:---|
+| 🎯 Test Accuracy | Overall classification correctness |
+| 📉 Test Loss | Prediction error |
+| 🔍 Precision | Reliability of positive predictions |
+| ❤️ Recall | Identification of actual positive cases |
+| ⚖️ F1-Score | Balance between precision and recall |
+| 🧩 Confusion Matrix | Classification error analysis |
 
-• Test Accuracy
+### 🏆 Performance Results
 
-**The notebook prints the result using:**
+| Evaluation Metric | Result |
+|:---|:---|
+| Test Accuracy | Add actual result |
+| Test Loss | Add actual result |
+| Normal Precision | Add actual result |
+| Normal Recall | Add actual result |
+| Pneumonia Precision | Add actual result |
+| Pneumonia Recall | Add actual result |
+| Overall F1-Score | Add actual result |
 
-```python
-test_loss, test_acc = model.evaluate(test_generator)
-print(f'Test Accuracy: {test_acc:.2f}')
-```
+> **Note:** Replace the placeholders with actual results generated by your notebook. No unverified accuracy or performance claims are reported here.
 
-### Result
+---
 
-```text
-Test Accuracy: [Your Model Result]
-```
+# 🔥 Confusion Matrix
 
-**Replace `[Your Model Result]` with the exact accuracy produced when you run the notebook.**
+A confusion matrix is used to examine the classification performance of the model.
 
-## 🔍 Predictions
+It provides information about correctly and incorrectly classified chest X-ray images.
 
-**The trained model predicts the probability that each chest X ray image belongs to the pneumonia class.**
+### 🧩 Confusion Matrix Structure
 
-*A threshold of 0.5 is used:*
+| Actual / Predicted | Normal | Pneumonia |
+|:---|:---:|:---:|
+| Normal | True Negative (TN) | False Positive (FP) |
+| Pneumonia | False Negative (FN) | True Positive (TP) |
 
-```python
-predicted_labels = (predictions > 0.5).astype(int)
-```
+### 📌 Interpretation
 
-*Prediction values are interpreted as:*
+- **True Negative:** Normal images correctly classified as Normal.
+- **True Positive:** Pneumonia images correctly classified as Pneumonia.
+- **False Positive:** Normal images incorrectly classified as Pneumonia.
+- **False Negative:** Pneumonia images incorrectly classified as Normal.
 
-```text
-0 → Normal
-1 → Pneumonia
-```
+False negatives are particularly important to examine in medical image classification because they represent pneumonia cases incorrectly classified as Normal.
 
-## 🔥 Confusion Matrix
+---
 
-**A confusion matrix is generated to analyze the model's predictions.**
+# 📈 Learning Curves & Visualization
 
-```text
-                    Predicted
-                 Normal   Pneumonia
+The project generates visualizations to examine model training and classification performance.
 
-Actual Normal      TN         FP
+### 1. 📉 Training and Validation Loss
 
-Actual Pneumonia   FN         TP
-```
+The loss visualization helps evaluate how prediction errors change throughout training.
 
-Where:
+### 2. 📈 Training and Validation Accuracy
 
-• TN represents correctly predicted Normal images
+The accuracy visualization provides insight into the model's learning behavior.
 
-• TP represents correctly predicted Pneumonia images
+### 3. 🔥 Confusion Matrix
 
-• FP represents Normal images incorrectly predicted as Pneumonia
+The confusion matrix helps identify classification strengths and errors across both categories.
 
-• FN represents Pneumonia images incorrectly predicted as Normal
+### 4. 🖼️ Sample Chest X-ray Images
 
-The project generates the confusion matrix using Seaborn:
+Sample images can be used to inspect the dataset and verify image labeling.
 
-```python
-plot_confusion_matrix(cm, ['Normal', 'Pneumonia'])
-```
+> **Visualization tip:** Add your actual generated plots to a `results/` directory and embed them below when available.
 
-### Confusion Matrix Visualization
-
-**Add your generated confusion matrix image to the repository:**
-
-```text
-results/confusion_matrix.png
-```
-
-Then display it in the README:
+Example:
 
 ```markdown
+![Training and Validation Loss](results/training_loss.png)
+
+![Training and Validation Accuracy](results/training_accuracy.png)
+
 ![Confusion Matrix](results/confusion_matrix.png)
+
+![Sample Chest X-ray Images](results/sample_images.png)
 ```
 
-## 📋 Classification Report
+---
 
-**The model also generates a classification report containing:**
+# 🚀 Installation & Execution
 
-• Precision
+Follow these steps to run the project locally.
 
-• Recall
+### 1. Clone the Repository
 
-• F1 Score
+```bash
+git clone https://github.com/shahidazam2020-oss/Pneumonia-Classification-Using-VGG16.git
+```
 
-• Support
+### 2. Navigate to the Project Directory
 
-**The report evaluates the performance for both classes:**
+```bash
+cd Pneumonia-Classification-Using-VGG16
+```
+
+### 3. Install Dependencies
+
+```bash
+pip install tensorflow numpy matplotlib seaborn scikit-learn pandas jupyter
+```
+
+### 4. Download the Dataset
+
+Download the Chest X-Ray Images (Pneumonia) dataset from Kaggle.
+
+<a href="https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia">
+  <img src="https://img.shields.io/badge/DOWNLOAD-Kaggle_Dataset-20BEFF?style=for-the-badge&logo=kaggle" />
+</a>
+
+Organize the dataset into the training, validation, and testing directories described above.
+
+### 5. Launch Jupyter Notebook
+
+```bash
+jupyter notebook
+```
+
+### 6. Execute the Notebook
+
+Open:
 
 ```text
-Normal
-Pneumonia
+Pneumonia Classiifcation.ipynb
 ```
 
-**The classification report is generated using:**
+Execute the notebook cells sequentially to perform preprocessing, model training, validation, and evaluation.
 
-```python
-classification_report(
-    true_labels,
-    predicted_labels,
-    target_names=['Normal', 'Pneumonia']
-)
-```
+---
 
-### Performance Metrics
+# 🛠️ Technologies & Tools
 
-| Metric    | Description                                             |
-| --------- | ------------------------------------------------------- |
-| Precision | Measures how many predicted cases are correct           |
-| Recall    | Measures how many actual cases are correctly identified |
-| F1 Score  | Balance between precision and recall                    |
-| Support   | Number of samples in each class                         |
+The project utilizes the following technologies:
 
-## 📊 Results
+<div align="center">
 
-**The final performance of the model should be presented here using your actual output.**
+<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+<img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" />
+<img src="https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=keras&logoColor=white" />
+<img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" />
+<img src="https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Seaborn-4C72B0?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white" />
+<img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white" />
+<img src="https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white" />
 
-| Metric              | Result          |
-| ------------------- | --------------- |
-| Test Accuracy       | Add your result |
-| Test Loss           | Add your result |
-| Normal Precision    | Add your result |
-| Normal Recall       | Add your result |
-| Pneumonia Precision | Add your result |
-| Pneumonia Recall    | Add your result |
-| Overall F1 Score    | Add your result |
+</div>
 
-## 📈 Project Visualizations
+---
 
-**The repository should contain the following result images:**
-
-```text
-results/
-│
-├── sample_images.png
-├── training_validation_loss.png
-├── training_validation_accuracy.png
-└── confusion_matrix.png
-```
-
-**These images can be displayed in the README.**
-
-### Sample Chest X Ray Images
-
-```markdown
-![Sample Images](results/sample_images.png)
-```
-
-### Training and Validation Curves
-
-```markdown
-![Learning Curves](results/learning_curves.png)
-```
-
-### Confusion Matrix
-
-```markdown
-![Confusion Matrix](results/confusion_matrix.png)
-```
-
-## 📁 Recommended Repository Structure
+# 📂 Repository Structure
 
 ```text
 Pneumonia-Classification-Using-VGG16/
 │
-├── Pneumonia Classification.ipynb
+├── 📓 Pneumonia Classiifcation.ipynb
 │
-├── README.md
-│
-├── requirements.txt
-│
-├── results/
-│   ├── sample_images.png
-│   ├── learning_curves.png
-│   └── confusion_matrix.png
-│
-└── LICENSE
+└── 📘 README.md
 ```
 
-## 🚀 How to Run the Project
-
-1. Clone the repository.
-
-2. Install the required libraries.
-
-```python
-pip install tensorflow numpy matplotlib seaborn scikit-learn kaggle
-```
-
-3. Download the Chest X Ray Pneumonia dataset.
-
-4. Organize the dataset into training, validation, and test directories.
-
-5. Run the Jupyter Notebook.
-
-6. Train the VGG16 model.
-
-7. Evaluate the model on the test dataset.
-
-8. View the learning curves, confusion matrix, and classification report.
-
+The notebook contains the data preprocessing, augmentation, VGG16 model implementation, training, evaluation, and visualization workflow.
 
 ---
 
-# 👨‍💻 About Me
+# 🧠 Research Limitations
+
+Although this project demonstrates the application of transfer learning for medical image classification, several limitations should be considered.
+
+- **Dataset Dependency:** Model performance depends on the quality and distribution of the selected dataset.
+- **Generalizability:** Performance on external datasets and different patient populations requires independent evaluation.
+- **Model Interpretability:** VGG16 predictions require additional explainability techniques to better understand the visual features influencing classification.
+- **Clinical Validation:** The model has not been established as a clinically validated diagnostic system.
+- **Image Variability:** Differences in imaging equipment, image quality, and acquisition conditions may affect predictions.
+
+### 🔬 Potential Improvements
+
+- Explore fine-tuning of pretrained convolutional layers.
+- Compare VGG16 with ResNet50, DenseNet121, and EfficientNet.
+- Integrate Grad-CAM for visual explainability.
+- Investigate additional image augmentation strategies.
+- Evaluate model performance on independent datasets.
+
+---
+
+# 🔁 Reproducibility & Research Transparency
+
+This repository provides a Jupyter Notebook containing the implementation and experimental workflow.
+
+For reproducible experimentation, researchers should consider:
+
+- Using the same dataset version.
+- Maintaining consistent image preprocessing.
+- Recording random seeds.
+- Using identical training configurations.
+- Documenting TensorFlow and Keras versions.
+- Reporting complete classification metrics.
+
+Reproducing identical results may require matching the original software environment and experimental settings.
+
+---
+
+# ⚠️ Medical Research Disclaimer
+
+This project is developed for educational, academic, and research purposes.
+
+The model is an experimental image classification system and is not intended to provide medical diagnoses, replace qualified healthcare professionals, or guide clinical treatment decisions.
+
+Its predictions should not be used as a substitute for professional medical evaluation.
+
+---
+
+# 🚀 Future Improvements
+
+Potential directions for further development include:
+
+- [ ] 🧠 Fine-tuning pretrained VGG16 layers.
+- [ ] 🔬 Comparing multiple CNN architectures.
+- [ ] 🔥 Integrating Grad-CAM visualization.
+- [ ] 📊 Adding ROC curves and AUC analysis.
+- [ ] ⚖️ Investigating class imbalance handling.
+- [ ] 🩺 Evaluating external chest X-ray datasets.
+- [ ] 🌐 Developing an interactive prediction interface.
+- [ ] 📈 Improving model interpretability and evaluation.
+
+---
+
+# 👨‍💻 About the Author
+
+<div align="center">
+
 ## Shahid Azam
 
-**MS Computer Science Student**
-**Specialization in Artificial Intelligence**
+**Computer Science | Artificial Intelligence | Machine Learning**
+
+MS Computer Science — Artificial Intelligence Specialization
 
 Institute of Management Sciences, Peshawar, Pakistan
 
-I enjoy building complete software systems—from networking and operating system concepts to backend architecture, machine learning, and distributed systems.
+I am interested in developing intelligent systems and exploring practical applications of Artificial Intelligence, Deep Learning, Computer Vision, and Machine Learning.
 
-- 🎓 **Degree / Field:** MS in Computer Science (Specialization in Artificial Intelligence)
-- 🏆 **Achievements:** Designed and executed 30+ machine learning and data visualization projects delivering actionable insights
-- 🎯 **Focus Areas:** Data Visualization, AI/ML, Big Data Mining
-- 📬 **Contact:** shahidazam2020@gmail.com
-- <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="18" height="18" valign="middle" /> WhatsApp: <a href="https://wa.me/+923412772594" target="_blank">Chat on WhatsApp</a>
+### 🌐 Connect With Me
 
----
-📊 Data Analysis • 🔬 Research • 🤖 Machine Learning • 🔐 Cybersecurity • 🌐 IoT
-
-
----
-# 🤝 Connect With Me
-<p align="center">
 <a href="https://github.com/shahidazam2020-oss">
-<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
+  <img src="https://img.shields.io/badge/GitHub-Follow_Me-181717?style=for-the-badge&logo=github" />
 </a>
-    <a href="https://www.linkedin.com/in/shahid-azam-mughal-787b58235">
-        <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
-        </a>
+
+<a href="https://www.linkedin.com/in/shahid-azam-mughal-787b58235">
+  <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin" />
+</a>
+
+<a href="https://www.researchgate.net/profile/Shahid-Azam-5">
+  <img src="https://img.shields.io/badge/ResearchGate-Research_Profile-00CCBB?style=for-the-badge&logo=researchgate" />
+</a>
+
+<a href="https://orcid.org/0009-0001-6825-8863">
+  <img src="https://img.shields.io/badge/ORCID-Researcher_ID-A6CE39?style=for-the-badge&logo=orcid&logoColor=white" />
+</a>
+
+</div>
 
 ---
-    
-## 🎯 Conclusion
 
-**This project demonstrates the use of transfer learning for medical image classification. The pretrained VGG16 model extracts useful visual features from chest X ray images, while custom layers perform the final Normal versus Pneumonia classification.**
+# 🤝 Contributing
 
-**The project includes data preprocessing, augmentation, image visualization, model training, performance evaluation, learning curves, confusion matrix analysis, and classification metrics. These results provide a complete overview of the model's performance on pneumonia classification.**
+Contributions, suggestions, and constructive feedback are welcome.
 
+If you would like to improve this project:
+
+1. Fork the repository.
+2. Create a new branch.
+3. Implement your improvements.
+4. Commit your changes.
+5. Submit a Pull Request.
+
+### 💡 Contribution Areas
+
+| Area | Possible Contributions |
+|:---|:---|
+| 🧠 Deep Learning | Alternative CNN architectures |
+| 🔥 Explainable AI | Grad-CAM and visualization |
+| 🖼️ Image Processing | Advanced preprocessing |
+| 📊 Evaluation | Additional classification metrics |
+| 📝 Documentation | Technical improvements |
+
+<div align="center">
+
+<a href="https://github.com/shahidazam2020-oss/Pneumonia-Classification-Using-VGG16/issues">
+  <img src="https://img.shields.io/badge/REPORT-Open_Issue-orange?style=for-the-badge&logo=github" />
+</a>
+
+<a href="https://github.com/shahidazam2020-oss/Pneumonia-Classification-Using-VGG16/pulls">
+  <img src="https://img.shields.io/badge/CONTRIBUTE-Pull_Request-success?style=for-the-badge&logo=github" />
+</a>
+
+</div>
 
 ---
-# ⭐ If You Find This Project Useful
 
-If this project helps you understand machine learning for healthcare prediction, consider:
+# 📜 License
 
-⭐ **Starring the repository**
+No explicit license is currently specified for this repository.
 
-🍴 **Forking the project**
-
-🐛 **Opening an issue**
-
-💡 **Sharing suggestions**
-
-🤝 **Contributing improvements**
+Please contact the repository owner before redistributing or modifying project materials. Third-party datasets remain subject to their original licensing and usage terms.
 
 ---
-<p align="center">
-  <b>🧠 Learn Machine Learning • 💻 Build Models • 📊 Analyze Data • 🚀 Create Projects</b>
-  </p>
 
-<p align="center">
-  Made with ❤️ for learning, experimentation, and continuous improvement.
-</p>
+# ⭐ Support This Project
 
-<p align="center">
- <strong>Made with ❤️ by Shahid Azam</strong>
-</p>
+If you find this project useful for your learning, research, or professional development:
+
+- ⭐ Star this repository.
+- 🍴 Fork the project.
+- 🔗 Share it with your academic network.
+- 💡 Suggest improvements.
+- 🤝 Contribute to future development.
+
+Your support and feedback are appreciated!
+
+---
+
+<div align="center">
+
+### 🫁 Advancing Medical Imaging Through Deep Learning
+
+**Artificial Intelligence • Computer Vision • Transfer Learning • Healthcare Research**
+
+<br>
+
+Made with ❤️ by **Shahid Azam**
+
+<sub>© 2026 | Deep Learning & Medical Image Classification Project</sub>
+
+</div>
